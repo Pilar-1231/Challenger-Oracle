@@ -1,3 +1,4 @@
+![Encriptador-AP](https://github.com/user-attachments/assets/2317641a-1317-4d3c-ba0c-7b71f0290b66)
 #ENCRIPTADOR
 <p>
 Bienvenido al Encriptador de Texto, una herramienta desarrollada para cifrar y descifrar mensajes de manera eficiente y segura. Este proyecto ofrece una interfaz de usuario intuitiva y visualmente atractiva, ideal para usuarios que buscan proteger la confidencialidad de su información.
