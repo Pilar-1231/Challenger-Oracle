@@ -1,0 +1,158 @@
+:root {
+    --color-primario: #fffcfc;
+    --color-secundario: #710A3F;
+    --color-terciario: #5d80b4;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-montserrat);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primario); /* Fondo de respaldo en caso de que el GIF no cargue */
+    box-sizing: border-box;
+    background-image: url(https://i.gifer.com/8GQ1.gif);
+    background-size: cover; /* Ajusta el tamaño del fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 50px;
+    max-width: 1200px; /* Ajusta el ancho máximo si es necesario */
+    margin: auto;
+    height: 100vh;
+    gap: 50px; /* Ajusta el espaciado entre secciones */
+}
+
+.input-section, .output-section {
+    width: 50%; /* Igualan el ancho de las secciones */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px; /* Aumenta el padding para más espacio */
+    font-size: 16px;
+    border: 1px solid var(--color-primario);
+    border-radius: 8px;
+    margin-bottom: 30px; /* Espacio debajo del textarea */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para profundidad */
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 40px; /* Espacio superior para bajar los botones */
+    width: 100%; 
+}
+
+button, #encrypt-btn, #decrypt-btn {
+    cursor: pointer;
+    width: 150px; /* Ajusta el ancho del botón según sea necesario */
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    font-weight: 600;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Añade transición suave */
+}
+
+#encrypt-btn, #decrypt-btn {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+#encrypt-btn:hover, #decrypt-btn:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+#decrypt-btn {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+#copy-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: none;
+    margin-top: 20px;
+}
+#copy-btn:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+#safe-mode {
+    margin-right: 0px;
+}
+
+.output-section {
+    background-color: var(--color-primario);
+    padding: 30px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.encrypted-message-box {
+    margin-top: 20px;
+    background-color: var(--color-primario);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    color: var(--color-primario);
+    background-color: var(--color-terciario);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}

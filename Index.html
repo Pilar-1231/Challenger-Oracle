@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="Diseño.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <textarea id="text-input" placeholder="Ingrese el texto aquí"></textarea>
+            <label>
+                <input type="checkbox" id="safe-mode"> Solo letras alfabéticas y sin acentos
+            </label>
+            <div class="buttons">
+                <button id="encrypt-btn">Encriptar</button>
+                <button id="decrypt-btn">Desencriptar</button>
+            </div>
+            
+        </div>
+        <div class="output-section">
+            <img src="img/ilustracion-1.png" alt="Illustration">
+            <div class="encrypted-message-box">
+                <p id="output-message">Ningún mensaje fue encontrado</p>
+                <button id="copy-btn" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Andrea Peñaloza</p>
+    </footer>
+</body>
+
+</html>
